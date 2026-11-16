@@ -404,24 +404,28 @@ OPEN_MOVIES = [
     }
 ]
 
-def load_resolved_items():
+def load_data():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.dirname(script_dir)
     primary_path = os.path.join(root_dir, 'data', 'resolved_archive_items.json')
     extra_path = os.path.join(root_dir, 'data', 'extra_resolved.json')
+    anim_path = os.path.join(root_dir, 'data', 'verified_animations_all.json')
+    
     with open(primary_path, 'r', encoding='utf-8') as f:
         primary = json.load(f)
     with open(extra_path, 'r', encoding='utf-8') as f:
         extra = json.load(f)
-    return primary, extra
+    with open(anim_path, 'r', encoding='utf-8') as f:
+        animations = json.load(f)
+        
+    return primary, extra, animations
 
 def build_catalog():
-    primary, extra = load_resolved_items()
+    primary, extra, animations = load_data()
     script_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.dirname(script_dir)
     catalog_dir = os.path.join(root_dir, 'catalog')
     
-    # Map extra items to category metadata
     extra_meta = {
         'The Last Man on Earth': ('The Last Man on Earth (Mortos Que Matam)', 1964, 'Terror, Sci-Fi & Cult Clássico', 'Vincent Price', 'en', 'Primeira adaptação do romance Eu Sou a Lenda de Richard Matheson.'),
         'White Zombie': ('White Zombie (Zumbi Branco)', 1932, 'Terror, Sci-Fi & Cult Clássico', 'Bela Lugosi', 'en', 'O primeiro longa-metragem sobre mortos-vivos da história do cinema.'),
@@ -440,13 +444,6 @@ def build_catalog():
         'Sherlock Holmes: The Woman in Green': ('Sherlock Holmes: The Woman in Green (A Mulher de Verde)', 1945, 'Film Noir, Policial & Mistério', 'Basil Rathbone, Nigel Bruce', 'en', 'Holmes investiga uma série de assassinatos misteriosos orquestrados pelo Professor Moriarty.'),
         'Sherlock Holmes: Secret Weapon': ('Sherlock Holmes and the Secret Weapon (A Arma Secreta)', 1942, 'Film Noir, Policial & Mistério', 'Basil Rathbone, Nigel Bruce', 'en', 'Holmes e Watson em perigosa missão contra agentes inimigos na 2ª Guerra.'),
         'Angel and the Badman': ('Angel and the Badman (O Anjo e o Bandido)', 1947, 'Faroeste & Western', 'John Wayne, Gail Russell', 'en', 'Pistoleiro foragido acolhido por família pacifista reavalia suas escolhas.'),
-        'Superman: Mechanical Monsters': ('Superman: The Mechanical Monsters', 1941, 'Animações Clássicas de Domínio Público', 'Fleischer Studios', 'en', 'Monstros robóticos voadores assaltam joalherias em Metrópolis.'),
-        'Superman: Billion Dollar Limited': ('Superman: Billion Dollar Limited', 1942, 'Animações Clássicas de Domínio Público', 'Fleischer Studios', 'en', 'Quadrilha armada tenta roubar o trem de ouro de um bilhão de dólares.'),
-        'Superman: Bulleteers': ('Superman: The Bulleteers', 1942, 'Animações Clássicas de Domínio Público', 'Fleischer Studios', 'en', 'Veículo jato aerodinâmico aterroriza a cidade com explosões devastadoras.'),
-        'Popeye: Ali Baba': ('Popeye: Meets Ali Baba\'s Forty Thieves', 1937, 'Animações Clássicas de Domínio Público', 'Fleischer Studios', 'en', 'Popeye, Olívia Palito e Dudu enfrentam Abu Hassan e seus 40 ladrões em cores radiantes.'),
-        'Gullivers Travels': ('Gulliver\'s Travels (As Viagens de Gulliver)', 1939, 'Animações Clássicas de Domínio Público', 'Max Fleischer', 'en', 'Segundo longa de animação colorido da história do cinema, adaptando Jonathan Swift.'),
-        'Steamboat Willie': ('Steamboat Willie (O Vapor Willie - Estreia de Mickey Mouse)', 1928, 'Animações Clássicas de Domínio Público', 'Walt Disney, Ub Iwerks', 'silent', 'O lendário nascimento de Mickey Mouse. Em Domínio Público desde 1º de janeiro de 2024.'),
-        'Betty Boop': ('Betty Boop: Poor Cinderella (A Pequena Cinderela)', 1934, 'Animações Clássicas de Domínio Público', 'Fleischer Studios', 'en', 'A única animação colorida de Betty Boop, clássico em Cinecolor.'),
         'Trip to the Moon': ('A Trip to the Moon (Viagem à Lua)', 1902, 'Arquivos Históricos & Cinejornais', 'Georges Méliès', 'silent', 'O primeiro clássico de ficção científica da história do cinema mundial.')
     }
 
@@ -466,8 +463,6 @@ def build_catalog():
         'Comédia / Mudo': 'Comédia & Cinema Mudo',
         'Comédia': 'Comédia & Cinema Mudo',
         'Western': 'Faroeste & Western',
-        'Animação / Super-Herói': 'Animações Clássicas de Domínio Público',
-        'Animação / Clássico': 'Animações Clássicas de Domínio Público',
         'Cinema Brasileiro / Vanguarda': 'Patrimônio do Cinema Brasileiro',
         'Cinema Brasileiro / Clássico': 'Patrimônio do Cinema Brasileiro',
         'Cinema Brasileiro / Histórico': 'Patrimônio do Cinema Brasileiro',
@@ -480,7 +475,7 @@ def build_catalog():
 
     all_media = []
 
-    # Add Live Channels
+    # 1. Add Live Channels (30 channels)
     for ch in LIVE_CHANNELS:
         all_media.append({
             "id": ch["id"],
@@ -497,9 +492,11 @@ def build_catalog():
             "type": "live_stream"
         })
 
-    # Add Primary Resolved Items
+    # 2. Add Primary Resolved Cinema & Heritage Items (excluding old animation entries to avoid duplicates)
     for item in primary:
         genre = item.get('genre', '')
+        if 'Animação' in genre:
+            continue
         group = category_mapping.get(genre, 'Clássicos do Cinema Mundial (Drama & Romance)')
         all_media.append({
             "id": item.get('identifier'),
@@ -515,11 +512,12 @@ def build_catalog():
             "type": "vod_archive"
         })
 
-    # Add Extra Resolved Items
+    # 3. Add Extra Resolved Items (excluding old animation entries)
     for item in extra:
         name = item.get('name')
-        meta = extra_meta.get(name, (item.get('title'), item.get('year'), 'Clássicos do Cinema Mundial (Drama & Romance)', '', 'en', ''))
-        title, year, group, director, lang, desc = meta
+        if name not in extra_meta:
+            continue
+        title, year, group, director, lang, desc = extra_meta[name]
         all_media.append({
             "id": item.get('identifier'),
             "title": title,
@@ -534,7 +532,23 @@ def build_catalog():
             "type": "vod_archive"
         })
 
-    # Add Open Cinema (Creative Commons)
+    # 4. Add Complete Verified Animation Classics (46 items)
+    for anim in animations:
+        all_media.append({
+            "id": anim["id"],
+            "title": anim["title"],
+            "year": anim.get("year"),
+            "group": "Animações Clássicas de Domínio Público",
+            "director": anim.get("director") or anim.get("studio"),
+            "lang": anim.get("lang", "en"),
+            "stream_url": anim["stream_url"],
+            "logo_url": anim["logo_url"],
+            "desc": anim.get("desc", ""),
+            "size_mb": anim.get("size_mb"),
+            "type": "vod_animation"
+        })
+
+    # 5. Add Open Cinema (Creative Commons - 5 items)
     for om in OPEN_MOVIES:
         all_media.append({
             "id": om["id"],
@@ -608,7 +622,6 @@ def generate_m3u8(items, filepath, playlist_title):
         lang = item.get('lang', '')
         country = item.get('country', '')
         
-        # Build EXTINF line with full standard IPTV player attributes
         extinf_parts = [
             f'#EXTINF:-1 tvg-id="{tvg_id}"',
             f'tvg-name="{full_display_title}"',
