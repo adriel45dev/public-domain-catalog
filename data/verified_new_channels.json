@@ -1,0 +1,212 @@
+[
+  {
+    "id": "CanalEducacao.br",
+    "name": "Canal Educação (MEC / EBC)",
+    "country": "BR",
+    "lang": "pt-BR",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://canaleducacao-stream.ebc.com.br/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Canal_Educa%C3%A7%C3%A3o_logo_2023.png/512px-Canal_Educa%C3%A7%C3%A3o_logo_2023.png",
+    "desc": "Canal oficial educativo do Ministério da Educação (MEC) gerido pela EBC."
+  },
+  {
+    "id": "CanalFutura.br",
+    "name": "Canal Futura",
+    "country": "BR",
+    "lang": "pt-BR",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://170.83.16.50/FUTURA/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d4/Logotipo_do_Canal_Futura.png/512px-Logotipo_do_Canal_Futura.png",
+    "desc": "Projeto de comunicação comunitária e educativa pioneiro no Brasil."
+  },
+  {
+    "id": "TVEBahia.br",
+    "name": "TVE Bahia (IRDEB)",
+    "country": "BR",
+    "lang": "pt-BR",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Logo_TVE_Bahia_2017.png/512px-Logo_TVE_Bahia_2017.png",
+    "desc": "Emissora pública educativa do Instituto de Radiodifusão Educativa da Bahia."
+  },
+  {
+    "id": "CulturaPara.br",
+    "name": "TV Cultura do Pará (FUNTELPA)",
+    "country": "BR",
+    "lang": "pt-BR",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://www.portalcultura.com.br/playerhtml/funtelpa/tv_funtelpa/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/pt/thumb/9/90/TV_Cultura_do_Par%C3%A1_logo.png/512px-TV_Cultura_do_Par%C3%A1_logo.png",
+    "desc": "Fundação Paraense de Radiodifusão (FUNTELPA). Emissora pública e cultural do Pará."
+  },
+  {
+    "id": "CanalParlamento.es",
+    "name": "Canal Parlamento (Espanha)",
+    "country": "ES",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Logo_Congreso_de_los_Diputados.svg/512px-Logo_Congreso_de_los_Diputados.svg.png",
+    "desc": "Emissão oficial aberta do Congresso dos Deputados do Reino de Espanha."
+  },
+  {
+    "id": "ARDalpha.de",
+    "name": "ARD-alpha (Alemanha)",
+    "country": "DE",
+    "lang": "de",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/ARD-alpha_2019.svg/512px-ARD-alpha_2019.svg.png",
+    "desc": "O canal de televisão público alemão de ciência, educação e alta cultura da rede ARD."
+  },
+  {
+    "id": "SenatoTV.it",
+    "name": "Senato TV (Itália)",
+    "country": "IT",
+    "lang": "it",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo_Senato_della_Repubblica.svg/512px-Logo_Senato_della_Repubblica.svg.png",
+    "desc": "Transmissão parlamentar oficial aberta do Senado da República Italiana."
+  },
+  {
+    "id": "CameradeiDeputati.it",
+    "name": "Camera dei Deputati (Itália)",
+    "country": "IT",
+    "lang": "it",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Emblem_of_the_Chamber_of_Deputies_%28Italy%29.svg/512px-Emblem_of_the_Chamber_of_Deputies_%28Italy%29.svg.png",
+    "desc": "Transmissão oficial ao vivo da Câmara dos Deputados do Parlamento Italiano."
+  },
+  {
+    "id": "SenalColombia.co",
+    "name": "Señal Colombia",
+    "country": "CO",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://138.121.15.230:9002/SENAL-COLOMBIA/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Se%C3%B1al_Colombia_logo.svg/512px-Se%C3%B1al_Colombia_logo.svg.png",
+    "desc": "Emissora de televisão pública nacional educativa e cultural da Colômbia (RTVC)."
+  },
+  {
+    "id": "CanalInstitucional.co",
+    "name": "Canal Institucional (Colômbia)",
+    "country": "CO",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://190.61.47.54:8000/play/a00v/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Canal_Institucional_logo_2018.png/512px-Canal_Institucional_logo_2018.png",
+    "desc": "Canal estatal da Colômbia dedicado a informar a cidadania sobre o Estado e serviços públicos."
+  },
+  {
+    "id": "CanalCongreso.co",
+    "name": "Canal Congreso (Colômbia)",
+    "country": "CO",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://138.121.15.230:9002/CANAL-CONGRESO/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_del_Congreso_de_la_Rep%C3%BAblica_de_Colombia.png/512px-Logo_del_Congreso_de_la_Rep%C3%BAblica_de_Colombia.png",
+    "desc": "Canal institucional oficial do Congresso da República da Colômbia."
+  },
+  {
+    "id": "TVSenado.cl",
+    "name": "TV Senado (Chile)",
+    "country": "CL",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://janus-tv-ply.senado.cl/playlist/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Logo_Senado_de_Chile.svg/512px-Logo_Senado_de_Chile.svg.png",
+    "desc": "Canal oficial aberto de televisão do Senado da República do Chile."
+  },
+  {
+    "id": "TVPeru.pe",
+    "name": "TV Perú",
+    "country": "PE",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://181.224.200.5:2277/play/a0dx/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/TV_Per%C3%BA_logo_2019.png/512px-TV_Per%C3%BA_logo_2019.png",
+    "desc": "A mais antiga emissora pública do Peru, pertencente ao Instituto Nacional de Radio y Televisión."
+  },
+  {
+    "id": "CanalIPe.pe",
+    "name": "Canal IPe (Peru)",
+    "country": "PE",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "http://187.102.210.46/IPE/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Canal_IPe_logo_2020.png/512px-Canal_IPe_logo_2020.png",
+    "desc": "Canal público cultural e infanto-juvenil do Ministério da Educação do Peru."
+  },
+  {
+    "id": "Cultura24.pe",
+    "name": "Cultura 24 (Peru)",
+    "country": "PE",
+    "lang": "es",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://www.opencaster.com/resources/hls_stream/cultura24.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Escudo_nacional_del_Per%C3%BA.svg/512px-Escudo_nacional_del_Per%C3%BA.svg.png",
+    "desc": "Canal audiovisual oficial de difusão de patrimônio e artes do Ministério da Cultura do Peru."
+  },
+  {
+    "id": "ClassicArtsShowcase.us",
+    "name": "Classic Arts Showcase",
+    "country": "US",
+    "lang": "en",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Classic_Arts_Showcase_logo.png/512px-Classic_Arts_Showcase_logo.png",
+    "desc": "Canal 24/7 de fomento cultural gratuito: concertos clássicos, óperas, balés e acervos cinematográficos de domínio público."
+  },
+  {
+    "id": "Create.us",
+    "name": "Create TV (PBS)",
+    "country": "US",
+    "lang": "en",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://create.lls.pbs.org/index.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Create_TV_logo.svg/512px-Create_TV_logo.svg.png",
+    "desc": "Rede pública americana educativa (PBS) dedicada a artes, culinária, pintura e sustentabilidade."
+  },
+  {
+    "id": "DistrictofColumbiaNetwork.us",
+    "name": "DCN - District of Columbia Network",
+    "country": "US",
+    "lang": "en",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://video.oct.dc.gov/out/u/DCN.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_the_District_of_Columbia.svg/512px-Flag_of_the_District_of_Columbia.svg.png",
+    "desc": "Canal público governamental e de transparência cívica da capital dos Estados Unidos (Washington D.C.)."
+  },
+  {
+    "id": "NHKWorldJapan.jp",
+    "name": "NHK World-Japan",
+    "country": "JP",
+    "lang": "en/ja",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=106",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/NHK_World-Japan_logo_2020.svg/512px-NHK_World-Japan_logo_2020.svg.png",
+    "desc": "Transmissão internacional pública aberta do Japão (NHK) com notícias globais e documentários sobre ciência e cultura."
+  },
+  {
+    "id": "KTV.kr",
+    "name": "KTV - Korea Policy TV",
+    "country": "KR",
+    "lang": "ko",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/512px-Flag_of_South_Korea.svg.png",
+    "desc": "Canal oficial público de políticas públicas, história nacional e cidadania da Coreia do Sul."
+  },
+  {
+    "id": "ArirangTV.kr",
+    "name": "Arirang TV",
+    "country": "KR",
+    "lang": "en",
+    "group": "Canais Públicos & Educativos (Ao Vivo)",
+    "url": "https://dash3.antik.sk/live/test_arirang/playlist.m3u8",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Arirang_TV_logo.svg/512px-Arirang_TV_logo.svg.png",
+    "desc": "Emissora internacional pública em língua inglesa sediada em Seul, com foco em cultura, cooperação internacional e artes."
+  }
+]

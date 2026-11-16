@@ -1,0 +1,39 @@
+#EXTM3U
+#PLAYLIST:Domínio Público - Animações Clássicas de Domínio Público
+#EXT-X-VERSION:3
+
+#EXTINF:-1 tvg-id="superman_1941" tvg-name="Superman: The Mad Scientist (1941)" tvg-logo="https://archive.org/services/img/superman_1941" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Superman: The Mad Scientist (1941)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/superman_1941/superman_1941_512kb.mp4
+
+#EXTINF:-1 tvg-id="POPEYEMeetsSindbadTheSailor1936" tvg-name="Popeye: Meets Sindbad the Sailor (1936)" tvg-logo="https://archive.org/services/img/POPEYEMeetsSindbadTheSailor1936" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Popeye: Meets Sindbad the Sailor (1936)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/POPEYEMeetsSindbadTheSailor1936/POPEYE%20meets%20Sindbad%20The%20Sailor%20%281936%29.mp4
+
+#EXTINF:-1 tvg-id="superman_the_mechanical_monsters" tvg-name="Superman: The Mechanical Monsters (1941)" tvg-logo="https://archive.org/services/img/superman_the_mechanical_monsters" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Superman: The Mechanical Monsters (1941)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/superman_the_mechanical_monsters/superman_the_mechanical_monsters_512kb.mp4
+
+#EXTINF:-1 tvg-id="billion_dollar_limited" tvg-name="Superman: Billion Dollar Limited (1942)" tvg-logo="https://archive.org/services/img/billion_dollar_limited" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Superman: Billion Dollar Limited (1942)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/billion_dollar_limited/billion_dollar_limited_512kb.mp4
+
+#EXTINF:-1 tvg-id="bulleteers" tvg-name="Superman: The Bulleteers (1942)" tvg-logo="https://archive.org/services/img/bulleteers" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Superman: The Bulleteers (1942)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/bulleteers/bulleteers_512kb.mp4
+
+#EXTINF:-1 tvg-id="PopeyeAliBabaRestored512kb" tvg-name="Popeye: Meets Ali Baba's Forty Thieves (1937)" tvg-logo="https://archive.org/services/img/PopeyeAliBabaRestored512kb" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Popeye: Meets Ali Baba's Forty Thieves (1937)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/PopeyeAliBabaRestored512kb/PopeyeAliBabaRestored_512kb.mp4
+
+#EXTINF:-1 tvg-id="gullivers_travels1939" tvg-name="Gulliver's Travels (As Viagens de Gulliver) (1939)" tvg-logo="https://archive.org/services/img/gullivers_travels1939" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Gulliver's Travels (As Viagens de Gulliver) (1939)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/gullivers_travels1939/gullivers_travels1939.mp4
+
+#EXTINF:-1 tvg-id="steamboat-willie_1928" tvg-name="Steamboat Willie (O Vapor Willie - Estreia de Mickey Mouse) (1928)" tvg-logo="https://archive.org/services/img/steamboat-willie_1928" group-title="Animações Clássicas de Domínio Público" tvg-language="silent",Steamboat Willie (O Vapor Willie - Estreia de Mickey Mouse) (1928)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/steamboat-willie_1928/steamboat-willie_1928.mp4
+
+#EXTINF:-1 tvg-id="bb_poor_cinderella" tvg-name="Betty Boop: Poor Cinderella (A Pequena Cinderela) (1934)" tvg-logo="https://archive.org/services/img/bb_poor_cinderella" group-title="Animações Clássicas de Domínio Público" tvg-language="en",Betty Boop: Poor Cinderella (A Pequena Cinderela) (1934)
+#EXTGRP:Animações Clássicas de Domínio Público
+https://archive.org/download/bb_poor_cinderella/bb_poor_cinderella_512kb.mp4
